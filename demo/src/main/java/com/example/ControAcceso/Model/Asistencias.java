@@ -10,10 +10,6 @@ public class Asistencias {
     private String documentoProfesor;
     private String documentoEstudiante;
 
-    public Asistencias() {
-
-    }
-
     public Asistencias(Long idAsistencia,
             LocalDateTime fecha,
             String estado,
