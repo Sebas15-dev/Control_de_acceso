@@ -1,13 +1,25 @@
 package com.example.ControAcceso.Model;
 
 import java.time.LocalDateTime;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name="Asistencias")
 public class Asistencias {
 
+    @Column(name="id_asistencias")
     private Long idAsistencia;
+
+    @Column(name="fecha")
     private LocalDateTime fecha;
+
+    @Column(name="estado")
     private String estado;
+
+    @Column(name="documento_profesor")
     private String documentoProfesor;
+
+    @Column(name="documento_estudiante")
     private String documentoEstudiante;
 
     public Asistencias(Long idAsistencia,
