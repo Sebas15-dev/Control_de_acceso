@@ -20,6 +20,10 @@ public class Tarjetas {
     @Column(name="documento_estudiante")
     private long documentoEstudiante;
 
+    public Tarjetas(){
+        
+    }
+
     public Tarjetas(Long codigoTarjeta, String estado,
                    LocalDate fechaAsignacion,
                    long documentoEstudiante) {

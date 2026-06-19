@@ -6,6 +6,10 @@ import jakarta.persistence.*;
 @Table(name="Profesores")
 public class Profesores extends Personas {
 
+    public Profesores(){
+        
+    }
+
     public Profesores(int documento, String tipoDocumento,
             String primerNombre, String segundoNombre,
             String primerApellido, String segundoApellido,
