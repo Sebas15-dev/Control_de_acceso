@@ -22,6 +22,10 @@ public class Asistencias {
     @Column(name="documento_estudiante")
     private String documentoEstudiante;
 
+    public Asistencias(){
+        
+    }
+
     public Asistencias(Long idAsistencia,
             LocalDateTime fecha,
             String estado,

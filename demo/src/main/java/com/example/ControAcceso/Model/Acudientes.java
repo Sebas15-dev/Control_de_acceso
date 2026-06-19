@@ -9,6 +9,10 @@ public class Acudientes extends Personas {
     @Column(name = "parentesco")
     private String parentesco;
 
+    public Acudientes(){
+
+    }
+
     public Acudientes(int documento, String tipoDocumento,
             String primerNombre, String segundoNombre,
             String primerApellido, String segundoApellido,
