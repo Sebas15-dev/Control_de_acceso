@@ -1,5 +1,9 @@
 package com.example.ControAcceso.Model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="Profesores")
 public class Profesores extends Personas {
 
     public Profesores(int documento, String tipoDocumento,
