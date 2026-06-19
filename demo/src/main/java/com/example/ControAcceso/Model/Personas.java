@@ -1,6 +1,9 @@
 package com.example.ControAcceso.Model;
 
-public class Personas {
+import jakarta.persistence.*;
+
+@MappedSuperclass
+public abstract class Personas {
 
     private int documento;
     private String tipoDocumento;
