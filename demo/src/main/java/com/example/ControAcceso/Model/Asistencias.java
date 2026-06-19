@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 @Table(name="Asistencias")
 public class Asistencias {
 
+    @Id
     @Column(name="id_asistencias")
     private Long idAsistencia;
 
