@@ -4,25 +4,25 @@ import java.time.LocalDateTime;
 
 public class ControlAcceso {
 
-    private Long id;
+    private Long idControlAcceso;
     private Long documentoEstudiante;
     private LocalDateTime fecha;
 
-    public ControlAcceso(Long id,
+    public ControlAcceso(Long idControlAcceso,
                          Long documentoEstudiante,
                          LocalDateTime fecha) {
 
-        this.id = id;
+        this.idControlAcceso = idControlAcceso;
         this.documentoEstudiante = documentoEstudiante;
         this.fecha = fecha;
     }
 
-    public Long getId() {
-        return id;
+    public Long getIdControlAcceso() {
+        return idControlAcceso;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setIdControlAcceso(Long idControlAcceso) {
+        this.idControlAcceso = idControlAcceso;
     }
 
     public Long getDocumentoEstudiante() {
