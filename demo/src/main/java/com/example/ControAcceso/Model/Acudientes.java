@@ -1,7 +1,12 @@
 package com.example.ControAcceso.Model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="Acudientes")
 public class Acudientes extends Personas {
 
+    @Column(name = "parentesco")
     private String parentesco;
 
     public Acudientes(int documento, String tipoDocumento,

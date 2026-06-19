@@ -30,8 +30,12 @@ public abstract class Personas {
     @Column(name="telefono")
     private long telefono;
 
-    @Column(name="correo")
+    @Column(name="correo") 
     private String correo;
+
+    public Personas(){
+
+    }
 
     public Personas(int documento, String tipoDocumento, String primerNombre,
                     String segundoNombre, String primerApellido,
