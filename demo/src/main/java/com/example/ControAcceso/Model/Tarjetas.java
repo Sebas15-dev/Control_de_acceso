@@ -1,17 +1,28 @@
 package com.example.ControAcceso.Model;
 
 import java.time.LocalDate;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name="Tarjetas")
 public class Tarjetas {
 
+    @Id
+    @Column(name="codigo_tarjeta")
     private Long codigoTarjeta;
+
+    @Column(name="estado")
     private String estado;
+
+    @Column(name="fecha_asignacion")
     private LocalDate fechaAsignacion;
-    private String documentoEstudiante;
+
+    @Column(name="documento_estudiante")
+    private long documentoEstudiante;
 
     public Tarjetas(Long codigoTarjeta, String estado,
                    LocalDate fechaAsignacion,
-                   String documentoEstudiante) {
+                   long documentoEstudiante) {
 
         this.codigoTarjeta = codigoTarjeta;
         this.estado = estado;
@@ -43,11 +54,11 @@ public class Tarjetas {
         this.fechaAsignacion = fechaAsignacion;
     }
 
-    public String getDocumentoEstudiante() {
+    public long getDocumentoEstudiante() {
         return documentoEstudiante;
     }
 
-    public void setDocumentoEstudiante(String documentoEstudiante) {
+    public void setDocumentoEstudiante(long documentoEstudiante) {
         this.documentoEstudiante = documentoEstudiante;
     }
 }
