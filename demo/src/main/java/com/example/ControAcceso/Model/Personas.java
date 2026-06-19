@@ -5,14 +5,32 @@ import jakarta.persistence.*;
 @MappedSuperclass
 public abstract class Personas {
 
+    @Id
+    @Column(name = "documento")
     private int documento;
+
+    @Column(name="tipo_de_documento")
     private String tipoDocumento;
+
+    @Column(name="primer_nombre")
     private String primerNombre;
+
+    @Column(name="segundo_nombre")
     private String segundoNombre;
+
+    @Column(name="primer_apellido")
     private String primerApellido;
+
+    @Column(name="segundo_apellido")
     private String segundoApellido;
+
+    @Column(name="direccion")
     private String direccion;
+
+    @Column(name="telefono")
     private long telefono;
+
+    @Column(name="correo")
     private String correo;
 
     public Personas(int documento, String tipoDocumento, String primerNombre,

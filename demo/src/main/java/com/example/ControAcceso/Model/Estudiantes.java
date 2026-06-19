@@ -1,22 +1,35 @@
 package com.example.ControAcceso.Model;
 
+import jakarta.persistence.*;
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "Estudiantes")
 public class Estudiantes extends Personas {
 
+    @Column(name = "fecha_de_nacimiento")
     private LocalDate fechaNacimiento;
+
+    @Column(name = "fecha_ingreso")
     private LocalDate fechaIngreso;
+
+    @Column(name = "genero")
     private String genero;
-    private String codigoTarjeta;
-    private String curso;
+
+    @Column(name = "id_curso")
+    private int curso;
+
+    public Estudiantes(){
+        
+    }
 
     public Estudiantes(int documento, String tipoDocumento,
                        String primerNombre, String segundoNombre,
                        String primerApellido, String segundoApellido,
                        String direccion, long telefono,
                        String correo, LocalDate fechaNacimiento,
-                       LocalDate fechaIngreso, String genero, String codigoTarjeta,
-                       String curso) {
+                       LocalDate fechaIngreso, String genero,
+                       int curso) {
 
         super(documento, tipoDocumento, primerNombre,
               segundoNombre, primerApellido,
@@ -26,7 +39,6 @@ public class Estudiantes extends Personas {
         this.fechaNacimiento = fechaNacimiento;
         this.fechaIngreso = fechaIngreso;
         this.genero = genero;
-        this.codigoTarjeta = codigoTarjeta;
         this.curso = curso;
     }
 
@@ -54,19 +66,11 @@ public class Estudiantes extends Personas {
         this.genero = genero;
     }
 
-    public String getCodigoTarjeta() {
-        return codigoTarjeta;
-    }
-
-    public void setCodigoTarjeta(String codigoTarjeta) {
-        this.codigoTarjeta = codigoTarjeta;
-    }
-
-    public String getCurso() {
+    public int getCurso() {
         return curso;
     }
 
-    public void setCurso(String curso) {
+    public void setCurso(int curso) {
         this.curso = curso;
     }
 }
