@@ -16,6 +16,10 @@ public class Cursos {
     @Column(name = "jornada")
     private String jornada;
 
+    public Cursos(){
+        
+    }
+
     public Cursos(Long idCurso, String grado, String jornada) {
         this.idCurso = idCurso;
         this.grado = grado;

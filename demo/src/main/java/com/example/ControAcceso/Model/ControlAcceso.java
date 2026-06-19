@@ -17,6 +17,10 @@ public class ControlAcceso {
     @Column(name = "fecha_ingreso")
     private LocalDateTime fecha;
 
+    public ControlAcceso(){
+        
+    }
+
     public ControlAcceso(Long idControlAcceso,
                          Long documentoEstudiante,
                          LocalDateTime fecha) {
