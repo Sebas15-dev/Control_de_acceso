@@ -3,7 +3,7 @@ package com.example.ControAcceso.Model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="Profesores")
+@Table(name="profesores")
 public class Profesores extends Personas {
 
     public Profesores(){
