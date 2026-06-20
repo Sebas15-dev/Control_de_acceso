@@ -18,10 +18,10 @@ public class Asistencias {
     private String estado;
 
     @Column(name="documento_profesor")
-    private String documentoProfesor;
+    private long documentoProfesor;
 
     @Column(name="documento_estudiante")
-    private String documentoEstudiante;
+    private long documentoEstudiante;
 
     public Asistencias(){
         
@@ -30,8 +30,8 @@ public class Asistencias {
     public Asistencias(Long idAsistencia,
             LocalDateTime fecha,
             String estado,
-            String documentoProfesor,
-            String documentoEstudiante) {
+            long documentoProfesor,
+            long documentoEstudiante) {
 
         this.idAsistencia = idAsistencia;
         this.fecha = fecha;
@@ -64,19 +64,19 @@ public class Asistencias {
         this.estado = estado;
     }
 
-    public String getDocumentoProfesor() {
+    public long getDocumentoProfesor() {
         return documentoProfesor;
     }
 
-    public void setDocumentoProfesor(String documentoProfesor) {
+    public void setDocumentoProfesor(long documentoProfesor) {
         this.documentoProfesor = documentoProfesor;
     }
 
-    public String getDocumentoEstudiante() {
+    public long getDocumentoEstudiante() {
         return documentoEstudiante;
     }
 
-    public void setDocumentoEstudiante(String documentoEstudiante) {
+    public void setDocumentoEstudiante(long documentoEstudiante) {
         this.documentoEstudiante = documentoEstudiante;
     }
 }
