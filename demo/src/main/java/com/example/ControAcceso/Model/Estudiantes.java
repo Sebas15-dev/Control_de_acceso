@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "Estudiantes")
+@Table(name = "estudiantes")
 public class Estudiantes extends Personas {
 
     @Column(name = "fecha_de_nacimiento")
