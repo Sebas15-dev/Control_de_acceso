@@ -28,7 +28,7 @@ public abstract class Personas {
     private String direccion;
 
     @Column(name="telefono")
-    private long telefono;
+    private String telefono;
 
     @Column(name="correo") 
     private String correo;
@@ -40,7 +40,7 @@ public abstract class Personas {
     public Personas(long documento, String tipoDocumento, String primerNombre,
                     String segundoNombre, String primerApellido,
                     String segundoApellido, String direccion,
-                    long telefono, String correo) {
+                    String telefono, String correo) {
 
         this.documento = documento;
         this.tipoDocumento = tipoDocumento;
@@ -109,11 +109,11 @@ public abstract class Personas {
         this.direccion = direccion;
     }
 
-    public long getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(long telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 

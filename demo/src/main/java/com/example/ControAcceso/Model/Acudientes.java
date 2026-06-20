@@ -16,7 +16,7 @@ public class Acudientes extends Personas {
     public Acudientes(long documento, String tipoDocumento,
             String primerNombre, String segundoNombre,
             String primerApellido, String segundoApellido,
-            String direccion, long telefono,
+            String direccion, String telefono,
             String correo, String parentesco) {
 
         super(documento, tipoDocumento, primerNombre,
