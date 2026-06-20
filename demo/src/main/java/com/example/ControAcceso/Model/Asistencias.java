@@ -4,11 +4,11 @@ import java.time.LocalDateTime;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="Asistencias")
+@Table(name="asistencias")
 public class Asistencias {
 
     @Id
-    @Column(name="id_asistencias")
+    @Column(name="id_asistencia")
     private Long idAsistencia;
 
     @Column(name="fecha")
