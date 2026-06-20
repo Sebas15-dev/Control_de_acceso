@@ -10,7 +10,7 @@ public class Profesores extends Personas {
         
     }
 
-    public Profesores(int documento, String tipoDocumento,
+    public Profesores(long documento, String tipoDocumento,
             String primerNombre, String segundoNombre,
             String primerApellido, String segundoApellido,
             String direccion, long telefono,

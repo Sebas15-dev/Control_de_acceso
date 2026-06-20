@@ -23,7 +23,7 @@ public class Estudiantes extends Personas {
         
     }
 
-    public Estudiantes(int documento, String tipoDocumento,
+    public Estudiantes(long documento, String tipoDocumento,
                        String primerNombre, String segundoNombre,
                        String primerApellido, String segundoApellido,
                        String direccion, long telefono,

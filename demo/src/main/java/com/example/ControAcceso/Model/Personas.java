@@ -7,7 +7,7 @@ public abstract class Personas {
 
     @Id
     @Column(name = "documento")
-    private int documento;
+    private long documento;
 
     @Column(name="tipo_de_documento")
     private String tipoDocumento;
@@ -37,7 +37,7 @@ public abstract class Personas {
 
     }
 
-    public Personas(int documento, String tipoDocumento, String primerNombre,
+    public Personas(long documento, String tipoDocumento, String primerNombre,
                     String segundoNombre, String primerApellido,
                     String segundoApellido, String direccion,
                     long telefono, String correo) {
@@ -53,11 +53,11 @@ public abstract class Personas {
         this.correo = correo;
     }
 
-    public int getDocumento() {
+    public long getDocumento() {
         return documento;
     }
 
-    public void setDocumento(int documento) {
+    public void setDocumento(long documento) {
         this.documento = documento;
     }
 
