@@ -3,11 +3,11 @@ package com.example.ControAcceso.Model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Cursos")
+@Table(name = "cursos")
 public class Cursos {
 
     @Id
-    @Column(name = "id_cursos")
+    @Column(name = "id_curso")
     private Long idCurso;
 
     @Column(name = "grado")
