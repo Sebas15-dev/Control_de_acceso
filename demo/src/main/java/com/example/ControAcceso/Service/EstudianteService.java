@@ -9,7 +9,7 @@ import com.example.ControAcceso.Model.Estudiantes;
 import com.example.ControAcceso.Repository.EstudianteRepository;
 
 @Service
-public class EstudiantesService {
+public class EstudianteService {
     
     @Autowired
     private EstudianteRepository estudianteRepository;
