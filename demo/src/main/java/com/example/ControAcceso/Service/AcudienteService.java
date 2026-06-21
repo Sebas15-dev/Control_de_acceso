@@ -3,10 +3,12 @@ package com.example.ControAcceso.Service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.ControAcceso.Model.Acudientes;
 import com.example.ControAcceso.Repository.AcudientesRepository;
 
+@Service
 public class AcudienteService {
     
     @Autowired
