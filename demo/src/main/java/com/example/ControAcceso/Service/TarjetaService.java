@@ -18,12 +18,19 @@ public class TarjetaService {
         return tarjetasRepository.findAll();
     }
 
-    public Tarjetas crearTarjetas(Tarjetas tarjetas){
+    public Tarjetas buscTarjeta(Long id){
+        return tarjetasRepository.findById(id).orElse(null);
+    }
+
+    public Tarjetas crearTarjeta(Tarjetas tarjetas){
         return tarjetasRepository.save(tarjetas);
     }
 
     public void eliminarTarjeta(Long codigoTarjeta){
         tarjetasRepository.deleteById(codigoTarjeta);
     }
+
+
     
+
 }

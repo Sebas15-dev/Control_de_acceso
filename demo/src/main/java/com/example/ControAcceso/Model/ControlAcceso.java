@@ -9,6 +9,7 @@ public class ControlAcceso {
 
     @Id
     @Column(name = "id_control_acceso")
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long idControlAcceso;
 
     @Column(name = "documento_estudiante")
@@ -21,11 +22,9 @@ public class ControlAcceso {
         
     }
 
-    public ControlAcceso(Long idControlAcceso,
-                         Long documentoEstudiante,
+    public ControlAcceso(Long documentoEstudiante,
                          LocalDateTime fecha) {
 
-        this.idControlAcceso = idControlAcceso;
         this.documentoEstudiante = documentoEstudiante;
         this.fecha = fecha;
     }
