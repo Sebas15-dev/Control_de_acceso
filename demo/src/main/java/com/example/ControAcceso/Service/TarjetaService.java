@@ -30,7 +30,4 @@ public class TarjetaService {
         tarjetasRepository.deleteById(codigoTarjeta);
     }
 
-
-    
-
 }
